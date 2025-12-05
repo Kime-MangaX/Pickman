@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public GameObject BulletPrefab;
+    [SerializeField] public int life = 10;
 
     public float Speed;
 
@@ -20,6 +21,7 @@ public class PlayerControl : MonoBehaviour
             MoveToDirection();
     }
 
+   
     public void MoveToDirection()
     {
         Vector2 worlPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -49,10 +51,13 @@ public class PlayerControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Enemy")
+        print("Enemy Colision : " + collision.tag);
+        if (collision.tag == "Destrulle")
         {
+            life--;
+            if (life <= 0)
+                Destroy(gameObject);
             print("Perdiste");
         }
-      
     }
 }
