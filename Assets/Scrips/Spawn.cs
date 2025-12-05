@@ -10,7 +10,7 @@ public class Spawn : MonoBehaviour
     float currentTime;
     void Start()
     {
-       
+
     }
 
     void Update()
@@ -36,3 +36,4 @@ public class Spawn : MonoBehaviour
         print(enemypost);
     }
 }
+     
