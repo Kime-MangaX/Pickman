@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class EnemyControl : MonoBehaviour
 {
-
     [SerializeField] private Transform player;
     [SerializeField] private float speed;
     [SerializeField] private float range;
@@ -28,7 +27,7 @@ public class EnemyControl : MonoBehaviour
          Flip(isPlayerRight);
 
         MoveToTarget();
-     }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -60,11 +59,9 @@ public class EnemyControl : MonoBehaviour
 
     public void MoveToTarget()
     {
-       
-            Vector3 dir = player.position - transform.position;
-            Vector3 normalizedDir = dir.normalized;
+        Vector3 dir = player.position - transform.position;
+        Vector3 normalizedDir = dir.normalized;
 
-            transform.position += normalizedDir * speed * Time.deltaTime;
-
+        transform.position += normalizedDir * speed * Time.deltaTime;   
     }
 }
