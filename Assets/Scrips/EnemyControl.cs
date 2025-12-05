@@ -38,6 +38,10 @@ public class EnemyControl : MonoBehaviour
             if (life <= 0)
                 Destroy(gameObject);
         }
+
+
+        if (collision.tag != "Player" && collision.tag != "Bullet")
+            Destroy(gameObject);
     }
 
 
@@ -64,4 +68,5 @@ public class EnemyControl : MonoBehaviour
 
         transform.position += normalizedDir * speed * Time.deltaTime;   
     }
+
 }
