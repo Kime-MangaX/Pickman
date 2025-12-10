@@ -142,12 +142,12 @@ TextureImporter:
       name: pixil-frame-0 (12)_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 94
+        x: 19
+        y: 93
         width: 261
         height: 269
       alignment: 9
-      pivot: {x: 0.5037126, y: 0.3631163}
+      pivot: {x: 0.49609405, y: 0.5017255}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

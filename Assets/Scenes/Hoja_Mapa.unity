@@ -8389,7 +8389,7 @@ BoxCollider2D:
   m_Offset: {x: 0.00000047683716, y: 0.20283705}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5037126, y: 0.3631163}
+    pivot: {x: 0.49609405, y: 0.5017255}
     oldSize: {x: 2.61, y: 2.69}
     newSize: {x: 2.61, y: 2.69}
     adaptiveTilingThreshold: 0.5
@@ -8925,10 +8925,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1531920979158052940, guid: 8cbc7f450ea7f674999c4fd862c2c76d, type: 3}
-      propertyPath: life
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5971325389829216991, guid: 8cbc7f450ea7f674999c4fd862c2c76d, type: 3}
       propertyPath: m_Name
       value: Fantasma
