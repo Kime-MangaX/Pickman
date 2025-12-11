@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public GameObject BulletPrefab;
-    [SerializeField] public int life = 10;
+  
 
     public float Speed;
 
