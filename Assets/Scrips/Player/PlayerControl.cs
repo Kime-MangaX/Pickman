@@ -49,15 +49,5 @@ public class PlayerControl : MonoBehaviour
         print(mousePosition);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        print("Enemy Colision : " + collision.tag);
-        if (collision.tag == "Destrulle")
-        {
-            life--;
-            if (life <= 0)
-                Destroy(gameObject);
-            print("Perdiste");
-        }
-    }
+  
 }
