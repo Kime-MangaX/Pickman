@@ -11,18 +11,14 @@ public class EnemyControl : MonoBehaviour
 
     private bool isFacingRight = true;
 
-   
 
     void Start()
     {
        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();   
     }
 
-    
-
      void Update()
      {
-
         bool isPlayerRight = transform.position.x < player.transform.position.x;
          Flip(isPlayerRight);
 
@@ -38,7 +34,6 @@ public class EnemyControl : MonoBehaviour
             if (life <= 0)
                 Destroy(gameObject);
         }
-
 
         if (collision.tag != "Player" && collision.tag != "Bullet")
             Destroy(gameObject);
@@ -60,7 +55,6 @@ public class EnemyControl : MonoBehaviour
     {
         return transform;
     }
-
     public void MoveToTarget()
     {
         Vector3 dir = player.position - transform.position;
@@ -68,5 +62,4 @@ public class EnemyControl : MonoBehaviour
 
         transform.position += normalizedDir * speed * Time.deltaTime;   
     }
-
 }
