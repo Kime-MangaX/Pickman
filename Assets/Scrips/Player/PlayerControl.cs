@@ -7,11 +7,6 @@ public class PlayerControl : MonoBehaviour
 
     public float Speed;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if(Input.GetMouseButtonDown(1))
@@ -27,8 +22,7 @@ public class PlayerControl : MonoBehaviour
         Vector2 worlPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 moveDirection = (worlPosition - (Vector2)transform.position).normalized;
 
-        transform.position += moveDirection *Speed * Time.deltaTime;
-
+        transform.position += moveDirection * Speed * Time.deltaTime;
     }
     public void ShootProyectile()
     {
@@ -48,6 +42,4 @@ public class PlayerControl : MonoBehaviour
 
         print(mousePosition);
     }
-
-  
 }
